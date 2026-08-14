@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Informativa de Turismo en Suiza</title>
+    <style>
+        :root {
+            --primary-color: #870900;
+            --accent-color: #fff;
+            --bg-light: #f4f6f5;
+            --card-bg: #ffffff;
+            --text-dark: #2c3e50;
+            --text-muted: #666666;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header / Navegación simple */
+        header {
+            background-color: var(--card-bg);
+            padding: 15px 0;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+
+        /* Banner Hero (Ubicación Geográfica) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200') center/cover;
+            color: white;
+            padding: 80px 40px;
+            border-radius: 16px;
+            margin: 20px 0 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Secciones informativas */
+        .section-title {
+            font-size: 24px;
+            color: var(--primary-color);
+	    margin: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .lol {
+            font-size: 28px;
+            color: #fff;
+            margin: 20px;
+            margin-bottom: 2px;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        /* Tarjetas de Destinos (Estilo Galería) */
+        .destination-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .dest-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .dest-card-content {
+            padding: 15px;
+        }
+
+        .dest-card h4 {
+            margin: 0 0 5px 0;
+            color: var(--primary-color);
+        }
+
+        .dest-card p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Pie Informativo (Logística) */
+        footer {
+            background-color: #870900;
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-column h4 {
+            color: var(--accent-color);
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 5px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column li {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">SUIZA INFO TURISMO</div>
+            <span style="font-size: 14px; color: var(--text-muted);">Portal de Información Turística</span>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- 7. Ubicación Geográfica -->
+        <section class="hero">
+            <h1>SUIZA</h1>
+            <p><strong>Ubicación Geográfica:</strong> Situado en el centro de Europa. Limita al norte con Alemania, al oeste con Francia, al sur con Italia y al este con Austria y Liechtenstein.</p>
+        </section>
+
+        <!-- 1 y 9. Perfil Turístico (Tipo de turismo y turista) -->
+        <h2 class="section-title">Perfil del Turismo en Suiza</h2>
+        <div class="info-grid">
+            <div class="card">
+                <h3>Ⅰ. Tipos de turismo más prácticados</h3>
+                <ul>
+                    <li><strong>Turismo de Montaña</strong></li>
+                    <li><strong>Turismo Cultural</strong></li>
+                    <li><strong>Senderismo</strong></li>
+                    <li><strong>Viajes panoramicos en tren</strong></li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Ⅱ. Lugares Turisticos</h3>
+                <ul>
+                    <strong>Montañas y Naturaleza:</strong> <li>Zermatt y el Matterhorn (Cervino): Un pueblo sin autos con una gran montaña en forma de punta.</li> <li>Lauterbrunnen: Un valle con paredes de roca alta y más de setenta saltos de agua.</li><li>Jungfraujoch: La estación de tren más alta de Europa con nieve todo el año.</li><li>Glaciar Aletsch: El río de hielo más largo de los Alpes.</li>
+                    <strong>Ciudades y Pueblos:</strong> <li>Lucerna: Una ciudad con un puente de madera antiguo y vistas a los Alpes.</li><li>Berna: Su centro histórico medieval es zona protegida por su belleza.</li><li>Zúrich: La ciudad más grande, con tiendas y un lago bonito.</li><li>Interlaken: Un sitio verde que está en medio de dos grandes lagos.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Ⅲ. Tipo de Turista más frecuente</h3>
+                <ul>
+                    <li>El perfil de turista que más frecuenta Suiza es el viajero europeo de proximidad (principalmente alemán y francés) motivado por la naturaleza, el montañismo y los deportes de invierno , seguido muy de cerca por el propio turista local suizo . Al analizar las estadísticas oficiales de pernoctaciones, el turismo en este país se divide en perfiles muy claros según su origen, capacidad económica y preferencias.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title">Monumentos Turisticos Resaltantes</h2>
+        <div class="destination-cards">
+            <div class="dest-card">
+                <div class="dest-card-content">
+                    <h4>Ⅰ. el Puente de la Capilla (Kapellbrücke)</h4>
+                    <p>Ubicación:<strong>  Lucerna.</strong></p>
+                </div>
+            </div>
+            <div class="dest-card">
+                <div class="dest-card-content">
+                    <h4>Ⅱ. la torre del reloj Zytglogge</h4>
+                    <p>Ubicación:<strong>  Berna</strong>.</p>
+                </div>
+            </div>
+            <div class="dest-card">
+                <div class="dest-card-content">
+                    <h4>Ⅲ. fuente Jet d'Eau</h4>
+                    <p>Ubicación:<strong>  Ginebra</strong></p>
+                </div>
+            </div>
+                        </div>
+        </div>
+
+        <!--  Eventos y Festivales -->
+        <h2 class="section-title"> Eventos y Festivales Principales</h2>
+        <div class="info-grid">
+            <div class="card">
+                <h3>Carnaval de Basilea (Fasnacht)</h3>
+                <p>El carnaval protestante más grande del mundo, donde las calles se llenan de música de pífanos y tambores, linternas gigantes y máscaras a las cuatro de la madrugada.</p>
+            </div>
+            <div class="card">
+                <h3>Sechseläuten (Zúrich)</h3>
+                <p>Fiesta de primavera en abril que culmina con la quema del "Böögg", un muñeco de nieve de algodón pólvora que predice el clima del verano.</p>
+            </div>
+            <div class="card">
+                <h3>Fiesta Nacional de Suiza</h3>
+                <p>Celebrada en todo el país con hogueras, desfiles de farolillos infantiles y fuegos artificiales sobre los lagos, el 1 de agosto.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+       <h1 class="lol">Monumentos Turisticos Resaltantes</h1>
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h4> Documentación Necesaria</h4>
+                <ul>
+                    <li>• <strong>Pasaporte vigente:</strong>  Con fecha de expedición menor a 10 años y una vigencia que se extienda al menos 3 meses después de la fecha prevista de salida del espacio Schengen..</li>
+                    <li>• <strong>Seguro médico de viaje:</strong>  Cobertura mínima de 30 000 euros (o su equivalente en francos), que incluye gastos médicos de emergencia y repatriación para todo el espacio Schengen.</li>
+                    <li>• <strong>Boleto de salida:</strong> Pasaje de avión de ida y vuelta o constancia de transporte que confirma tu salida de Suiza y del territorio Schengen antes de cumplir los 90 días.</li>
+                    <li>• <strong>Comprobante de alojamiento:</strong> Reserva de hotel pagada, itinerario o una carta de invitación oficial si te hospedas en casa de familiares o amigos.</li>
+                    <li>• <strong>Prueba de solvencia económica:</strong> Dinero en efectivo, tarjetas de crédito internacionales o extractos bancarios que demuestren capacidad financiera para tu sustento diario (aproximadamente 100 francos suizos por día)..</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4> Aerolíneas de Vuelo</h4>
+                <ul>
+                    No existen vuelos directos de Paraguay a Suiza, por lo que todas las rutas operan con escalas combinando aerolíneas europeas y latinoamericanas. Las principales compañías que realizan esta ruta desde el Aeropuerto Internacional Silvio Pettirossi (ASU) hacia destinos como Zúrich (ZRH) o Ginebra (GVA) son
+                    <li>• Air Europa</li>
+                    <li>• Latam Airlines</li>
+                    <li>• SWISS</li>
+                    <li>• Iberia</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Aeropuertos Principales</h4>
+                <ul>
+                    <li>• <strong>Aeropuerto de Zúrich (ZRH)</strong></li>
+                    <li>• <strong>Aeropuerto de Ginebra (GVA)</strong></li>
+		    <li>• <strong>Aeropuerto de Basilea-Mulhouse (BSL)</strong></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>Página informativa sobre el Turismo en Suiza • Diseñada con fines didácticos</p>
+        </div>
+    </footer>
+
+</body>
+</html>
